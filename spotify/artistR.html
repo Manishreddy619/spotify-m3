@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="stylesM.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        background-color: transparent;
+        color: #c2c2c2;
+        height: 980px;
+        font-family: Helvetica; Arial
+
+      }
+
+      .gradient {
+        background: rgb(50,50,50);
+        background: linear-gradient(180deg, rgba(102,101,101,1) 0%, rgba(50,50,50,1) 20%, rgba(59,60,70,1) 37%, rgba(39,39,45,1) 57%, rgba(0,0,0,1) 100%);
+       }
+       
+      #top{
+        color: white;
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        background-size: cover;
+          height: 450px;
+          background-attachment: fixed;
+          background-image: url(./img/QLive.jpg);
+          
+          /* background-image: url(./img/headphones.jpg); */
+          /* background-image: url("../img/BGB.jpg"); */
+         /* background-image:url(https://cdn-az.allevents.in/events8/banners/6c5ddcc3bdae1e3a967a2d4a48addc84c03e4ffa7e5afddbea098cd99e4be1e4-rimg-w526-h296-gmir.jpg?v=1623828787) */
+      }
+      .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+        padding-left: 0px ;
+        
+      }
+      .navfont {
+           font-size: 0.75rem;
+           font-weight: bold;
+           
+       }
+
+
+       .scrollablecolumn {
+           height: 900px;
+           overflow-y: auto
+       }
+       #sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient > div > div.container.d-flex.align-items-md-end{
+           display: flex;
+           align-items: flex-end;
+       }
+       .myNavBar{
+    margin-top: 0;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+
+.icons img{
+    width: 30px;
+}
+
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient > div.Popular > div > div{
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 25px;
+}
+
+.dropdown-menu{
+    border: none;
+    background-color:#282828;
+}
+
+.dropdown .btn{
+    border: none;
+    border-radius: 25px;
+    background-color: #282828;
+    font-weight: 600;
+}
+
+.dropdown-item{
+    background-color:#282828;
+    color: white;
+    font-weight: 300;
+    font-size: 14px;
+    border: none;
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle {
+    color: #fff;
+    
+    background-color: #282828;
+    border-color: #282828; 
+
+}
+/* follow btn*/
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div.strip > div > div > button{
+ font-weight: bold;
+ align-self: center;
+ margin-top: 5px;
+ padding-left: 25px;
+ padding-right: 25px;
+ color: #fff;
+ margin-left: 25px;
+ margin-top: 25px;
+}
+
+/*follow strip */
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div.strip > div > div{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+/*3 dots*/
+
+  #\33 dots > svg{
+    width: 40px;
+  }
+
+
+.account img{
+    width: 30px;
+    border-radius: 50%;
+}
+#top > div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top:80px;
+    color:white;
+    font-weight: bolder;
+
+}
+#top > div > h1 > b{
+
+position: absolute ;
+margin-top: 95px;
+font-size: 100px;
+font-family: 'Montserrat', sans-serif;
+padding-left: 50px;
+
+}
+.queen{
+margin: 0;
+
+}
+#listeners{
+  margin-top:440px;
+  padding-left: 50px;
+  position: absolute;
+}
+
+.footer{
+    position: fixed;
+    height: 90px;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    background-color: #1d1d1d;
+}
+
+.group img{
+    width: 75px;
+    padding: 5px;
+
+}
+
+.group{
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    position: relative;
+}
+/* popular */
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div.strip > div.Popular > div > div{
+  font-size: 25px;
+  font-weight: bolder;
+  margin-left: 30px;
+  margin-bottom: 20px ;
+}
+/* play bpotton */ 
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div.strip > div.container.d-flex.align-items-md-end > div > div.mx-3{
+  margin-left: 30px;
+  padding-left: 30px;
+}
+.control-panel{
+    border-bottom: 5px solid  rgb(133, 133, 133);
+    width: 500px;
+    text-align: center;
+    padding-bottom: 7px;
+}
+
+
+.control-panel img{
+    margin: 0 12px;
+}
+
+.extras img{
+    margin: 0 12px;
+}
+
+
+
+.toMove{
+    font-size: 12px;
+    position: absolute;
+    bottom: 5px;
+    left: 100px;
+}
+
+.toMove img{
+    margin-left: 5px;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 45%;
+    background-color: transparent;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    background: #2AF731;
+    border-radius: 1px;
+
+
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 4px #000000;
+    border: 0px solid #135078;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.5px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2AF731;
+  }
+  div#listNr.col-1.px-0{
+    display: flex;
+    justify-content: center;
+    color: lightslategray;
+    align-items: center;
+  }
+
+
+  div.cardbackground {
+    background: rgba(40, 40, 40, 0);
+    transition: 0.3s;
+    border: none;
+}
+
+div.cardbackground:hover {
+    background: rgba(40, 40, 40, 0.8);
+
+}
+
+.imageoverlay {
+    opacity: 1;
+
+}
+#Releases{
+  background-color: rgb(22, 22, 22);
+}
+div.cardbackground:hover .imageoverlay {
+    opacity: 1;
+}
+
+
+#popular{
+  font-size: 25px;
+  
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+
+.footercontainer {
+      height: 1rem;
+
+  }
+#about{
+  width: 75%;
+}
+#onAir{ 
+  width: 235px;
+  height: 289px;
+  background-color: rgb(22, 22, 22);
+}
+ 
+.bgimg {
+    background-image: url('img/about.png');
+    background-repeat: no-repeat;
+    height:550px ;
+}
+p.text-about{
+  color: white;
+  padding-top: 400px;
+  padding-left: 45px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+#sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div:nth-child(3) > div > div:nth-child(2) > div:nth-child(2) > div > div > div{
+  width: 800px;
+  color: white;
+  margin-bottom: 150px;
+}
+
+div.container.mt-3.ml-5{ 
+margin-bottom: 50px;
+}
+
+#date{
+  
+  width: 50px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  margin-left: 25px;
+  background-color: rgb(43, 42, 42);
+  font-size: 18px;
+  font-weight: bolder;
+  border-radius: 15px;
+
+  margin-bottom: 25px;
+  
+}
+#playButton{
+  height: 70px;
+  margin-top: 25px;}
+
+
+  #Dec{
+    font-size: 25px;
+  }
+
+
+  #sideNavbar > div > div.col-10.secondcolumn.scrollablecolumn.gradient.px-0 > div:nth-child(3) > div > div.container.mt-3.ml-5{
+    margin-bottom: ;
+  }
+
+  
+
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid" id="sideNavbar">
+
+
+
+      <!--------------------------------- NAVBAR START-------------------------------- -->
+      <div class="row">
+        <div class="col-2 mx-0 px-0 scrollablecolumn ">
+          <nav class="navbar navbar-light navfont">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"
+                ><img class="logoclass" src="./img/Spotify_Logo_RGB_White.png"
+              /></a>
+
+              <div class="navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-house-door-fill"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"
+                        />
+                      </svg>
+                      Home</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-search"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"
+                        />
+                      </svg>
+                      Search</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-list"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                        />
+                      </svg>
+                      Your Library</a
+                    >
+                  </li>
+                </ul>
+                <ul class="navbar-nav mr-auto mt-2">
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-plus-square-fill"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0z"
+                        />
+                      </svg>
+                      Create Playlist</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-heart-fill"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                        />
+                      </svg>
+                      Liked Songs
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="songslist">
+                  <p>Funky Heavy Bluesy</p>
+                  <p>Your Top Songs 2020</p>
+                  <p>In Love With You - Erykah B</p>
+                  <p>This is Rod Stewart</p>
+                  <p>FRANCHISE ft. Young Thug</p>
+                  <p>Your Top Songs 2019</p>
+                  <p>Palleggio</p>
+                  <p>This is Joe Bonamassa</p>
+                  <p>Jun19</p>
+                  <p>
+                    Jack 30th Party2
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-people"
+                      viewBox="0 0 22 22"
+                    >
+                      <path
+                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                      />
+                    </svg>
+                  </p>
+                  <p>
+                    Jack 30th Party
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      class="bi bi-people"
+                      viewBox="0 0 22 22"
+                    >
+                      <path
+                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"
+                      />
+                    </svg>
+                  </p>
+                  <p>This Is Opeth</p>
+                  <p>Metal Ballads</p>
+                  <p>New Playlist</p>
+                  <p>Your Top Songs 2018</p>
+                  <p>Jazz Classics Blue Note Editi</p>
+                </div>
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link text-white-50" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        fill="currentColor"
+                        class="bi bi-arrow-down-circle"
+                        viewBox="0 0 22 22"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"
+                        />
+                      </svg>
+                      Install App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          </div>
+
+<!--------------------------------- QUEEN CONTAINER-------------------------------- -->
+
+          <div class="col-10 secondcolumn scrollablecolumn gradient px-0" >
+
+          <div class="container-fluid" id="top">
+             <!----> <section class="myNavBar"style="margin-top:0;">
+    <div class="icons">
+        <button class="previous2">⮜</button>
+        <button class="previous2"> ⮞</button>
+    </div>
+    <div class="account">
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                  </svg>
+                Username
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Account</a>
+              <a class="dropdown-item" href="#">Profile</a>
+              <a class="dropdown-item" href="login.html">Log out</a>
+            </div>
+          </div>
+
+    </div>
+
+</section>
+            <div class="container queen">
+              <h1 class="display-3 d-flex "><b>Queen</b></h1>
+              <p id="listeners" >37,120,733 monthly listeners</p>
+            </div>
+
+
+
+
+              </div>
+
+
+          <div class="strip">
+
+          <div class="container d-flex align-items-md-end   ">
+            <div class="display-4 d-flex align-items-end">
+
+                <div class="mx-3">
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-play-circle-fill text-success" viewBox="0 0 16 16">
+                                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+                                    </svg>
+                                  -->
+                    <img src="img/play-button.png" id="playButton" >
+                  </div>
+                    <button type="button" class="btn btn-outline-secondary">FOLLOW</button>
+                  <div class="mx-2">
+
+                  </div>
+
+                  <div id="3dots" class="mx-2">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="30"
+                      fill="currentColor"
+                      class="bi bi-three-dots"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+
+
+          </div>
+        
+
+
+
+<!--------------------------------- QUEEN CONTAINER FINISH-------------------------------- -->
+
+        <div class="Popular">
+
+            <div class="playlist">
+                <div class="display-4 d-flex align-items-end pt-5 pl-2 pb-2" style="color: white;">Popular</div>
+                <p class="lead"></p>
+              </div>
+            </div>
+            <div class="container-fluid mb-2">
+              <div class="row">
+                <div  id="listNr" class="col-1 px-0">1</div>
+                <div class="col-8 px-0">
+                  <iframe src="https://open.spotify.com/embed/track/5vdp5UmvTsnMEMESIF2Ym7?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="col-2 likes px-0">
+                  <span><img src="./img/heart-white.png"></span>
+                  <span>1,013,238,772</span>  
+                </div>
+
+
+              </div>
+            </div>
+            
+                  
+                  <div class="container-fluid mb-2">
+                    <div class="row">
+                  <div id="listNr" class="col-1 px-0">2</div>
+
+                      <div class="col-8 px-0">
+                        <iframe src="https://open.spotify.com/embed/track/4u7EnebtmKWzUH433cf5Qv?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                      </div>
+                      <div class="col-2 likes px-0">
+                        <span><img src="./img/heart-white.png"></span>
+                        <span>1,497,986,258 </span>
+                      </div>
+
+                </div>
+              </div>
+              <div class="container-fluid mb-2">
+                <div class="row">
+                  <div  id="listNr" class="col-1 px-0">3</div>
+                  <div class="col-8 px-0">
+                    <iframe src="https://open.spotify.com/embed/track/5T8EDUDqKcs6OSOwEsfqG7?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </div>
+                  
+                  <div class="col-2 likes px-0">
+                    <span><img src="./img/heart-white.png"></span>
+                    <span>1,063,959,983</span>
+                  </div>
+
+
+                </div>
+              </div><div class="container-fluid mb-2">
+                <div class="row">
+                  <div id="listNr" class="col-1 px-0">4</div>
+                  <div class="col-8 px-0">
+                    <iframe src="https://open.spotify.com/embed/track/2fuCquhmrzHpu5xcA1ci9x?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </div>
+                  <div class="col-2 likes px-0">
+                    <span><img src="./img/heart-white.png"></span>
+                    <span>900,225,096</span> 
+                  </div>
+                  
+
+                </div>
+              </div>
+              
+              <div class="container-fluid mb-2">
+                <div class="row">
+                  <div  id="listNr" class="col-1 px-0">5</div>
+                  <div class="col-8 px-0">
+                    <iframe src="https://open.spotify.com/embed/track/4pbJqGIASGPr0ZpGpnWkDn?theme=0" width="100%" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                  </div>
+                  <div class="col-2 likes px-0">
+                    <span><img src="./img/heart-white.png"></span>
+                    <span>705,225,721</span>  
+                  </div>
+
+
+                </div>
+              </div>
+              
+              
+              
+              
+              <div class="container-fluid mb-2">
+
+
+          </div>
+        </div>
+        
+        <div>
+                          
+          
+        <div>
+                          
+          <div class="container-fluid mt-3 ml-2">
+            <h5 class="  d-flex align-items-end pt-5 pl-2 pb-2"  id="popular"><strong>Popular releases</strong></h5>
+            <div class="row">
+              <div class="col-3">
+                <div class="card p-2  " id="Releases">
+                  <img src="img/Bohemian.png" class="card-img-top imageoverlay" alt="...">
+                  <div class="card-body p-0 mt-3">
+                    <p class="card-text small text-black font-weight-bold">
+                   Bohemian Rhapsody (The Remix...)
+                    <br><span >1980 Album</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 " id="Releases">
+                  <img src="img/q1.png" class="card-img-top" alt="...">
+                  <div class="card-body  p-0 mt-3">
+                    <p class="card-text  small text-black font-weight-bold">The Game (2011 Remaster) (2... 
+                      <br><span >1980 Album</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 " id="Releases">
+                  <img src="img/q2.png" class="card-img-top imageoverlay" alt="...">
+                  <div class="card-body p-0 mt-3">
+                    <p class="card-text small text-white font-weight-bold">A Night At The Opera () 
+                      <br><span>1975</span></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-3">
+                <div class="card p-2 " id="Releases">
+                  <img src="img/q4.png" class="card-img-top imageoverlay" alt="...">
+                  <div class="card-body p-0 mt-3">
+                    <p class="card-text small text-white font-weight-bold">News Of The World
+                      <br><span >1977</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+                          
+            <div class="container-fluid mt-3 ml-2">
+              <h5 class="  d-flex align-items-end pt-5 pl-2 pb-2"  id="popular" onmouseover="mouseOver()" onmouseout="mouseOut()"><strong>Albums</strong></h5>
+              <div class="row">
+                <div class="col-3">
+                  <div class="card p-2   " id="Releases">
+                    <img src="img/Live_Around_the_World.png" class="card-img-top imageoverlay" alt="...">
+                    <div class="card-body p-0 mt-3">
+                      <p class="card-text small text-black font-weight-bold">
+                     Live Around The World
+                      <br><span >2020 Album</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card p-2 " id="Releases">
+                    <img src="img/Bohemian.png" class="card-img-top" alt="...">
+                    <div class="card-body  p-0 mt-3">
+                      <p class="card-text  small text-black font-weight-bold">Bohemian Rhapsody (The Remix...) 
+                        <br><span >2018 Album</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card p-2 " id="Releases">
+                    <img src="img/on_air.jpg" class="card-img-top" alt="...">
+                    <div class="card-body  p-0 mt-3">
+                      <p class="card-text small text-white font-weight-bold">On Air 
+                        <br><span>2016</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="card p-2 " id="Releases">
+                    <img src="img/odeon.jpg" class="card-img-top imageoverlay" alt="...">
+                    <div class="card-body p-0 mt-3">
+                      <p class="card-text small text-white font-weight-bold">A Night At The Odeon
+                        <br><span >2015</span></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div>
+                          <hr>
+
+<!----------------------------ABOUT SECTION------------------------------------->
+              <div class="container mt-3 ml-5">
+                <h5 class="  d-flex align-items-end pt-5 pl-2 pb-2"  id="popular"><strong>About</strong></h5>
+                <div class="bgimg">
+                  
+                      
+                        <p class="text-about"> <b>37,932,511 monthly listeners</b>  <br>
+
+                       <div class="text d-fluid ml-5 mb-4"><br><span >Few bands embodied the pure excess of the '70s like Queen.  Embracing the exaggerated pomp of prog rock  and heavy metal, as well as vaudevillian music hall,  the British quartet ... </span></p></div>
+                        
+                      
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+<!----------------- on tour-->
+<div class="container mt-3 ml-5">
+
+  <div> <h5 class="  d-flex  d-inline align-items-end pt-5 pl-2 pb-2"  id="popular"><strong>On Tour</strong></h5>
+    
+  
+  
+  </div>
+
+
+    <div class="container-fluid mb-2">
+      <div class="row">
+        <div id="date" class="col-1 px-0  d-flex justify-content-center align-content-center align-items-center " >DEC <br><span id="Dec"></span> 29</span></div>
+          <div class="col-4 pl-2 d-flex justify-content-center align-content-center align-items-center">
+            <p><b>Queen </b> <br> Wed 8:00 PM Kursaal Oostende  </p>
+          </div>
+          <div class="col-4  pl-2">
+          <span><img src="./img/puzzle.jpg"></span>
+          <span><b>Queen Tour Truck -3D Puzzle</b> </span>
+          </div>
+
+        </div>
+      </div>
+   
+    
+      
+    <div class="container-fluid mb-2">
+      <div class="row">
+        <div id="date" class="col-1 px-0  d-flex justify-content-center align-content-center align-items-center " >MAY <br><span id="Dec"></span> 27</span></div>
+          <div class="col-4 pl-2 d-flex justify-content-center align-content-center align-items-center">
+            <p><b>Queen </b> <br> Fri 7:30 PM  The SSE Arena, Belfast </p>
+          </div>
+          <div class="col-4  pl-2">
+          <span><img src="./img/stool.jpg"></span>
+          <span><b>Queen Classic Crest Bar Stool</b> </span>
+          </div>
+
+        </div>
+      
+   
+    </div>
+    <div class="container-fluid mb-2">
+      <div class="row">
+        <div id="date" class="col-1 px-0  d-flex justify-content-center align-content-center align-items-center " >MAY <br><span id="Dec"></span> 28</span></div>
+          <div class="col-4 pl-2 bg-black d-flex justify-content-center align-content-center align-items-center">
+            <p><b>Queen </b> <br> Sat 7:30 PM  The SSE Arena, Belfast</p>
+          </div>
+          </div>
+
+        
+      </div>
+   
+    </div>
+
+
+
+
+    
+        </div>
+      
+      </div>
+      <div class="container d-flex justify-content-center"> 
+        <div class="img" id="emblem"> <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()"><b>QUEEN</b></h1>
+      
+
+
+      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="img/Queen-Emblem.jpg" alt="emblem" width="350" height="auto">
+      </div>
+      
+      </div>
+      </div>
+    </div>
+
+
+
+
+
+<script>
+
+function bigImg(x) {
+  x.style.height = "260px";
+  x.style.width = "auto";
+}
+
+function normalImg(x) {
+  x.style.height = "200px";
+  x.style.width = "auto";
+}
+
+
+function mouseOver() {
+  document.getElementById("demo").style.color = "white";
+}
+
+function mouseOut() {
+  document.getElementById("demo").style.color = "red";
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="footer">
+
+           
+<section class="footer ">
+  <div class="col-12 controls px-0 ">
+  <div class=" group">
+      <span><img src="./img/alb7.png" style="margin-right: 10px;">Some music title<br></span>
+      
+      <span class="toMove"> by Group Random <img src="./img/heart.png" class="icons" style="width: 25px; height: 25px; margin-left: 20px;margin-bottom: 10px;"></span>
+      
+  </div>
+<div class="control-panel">
+      <img src="./img/shuffle.png" class="icons">
+      <img src="./img/previous.png" class="icons">
+      <img src="./img/play-button (1).png" class="icons" style="width:35px;height: 35px;">
+      <img src="./img/next.png" class="icons">
+      <img src="./img/repeat.png" class="icons">
+      
+</div>
+  
+  <div class="extras">
+      <img src="./img/playlist.png" class="icons">
+      <img src="./img/devices.png" class="icons">
+      <img src="./img/volume.png" class="icons">
+      <input type="range" class="volume-range">
+  </div>
+</section>
+
+
+  </body>
+</html>
