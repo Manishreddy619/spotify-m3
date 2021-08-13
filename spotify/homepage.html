@@ -1,548 +1,391 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="/img/spotify (2).png" type="image/icon type">
-    <title>Homepage</title>
-  </head>
-  <body>
-<div class="container-fluid"> 
-<div class="row">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+		/>
 
-<div class="col-2 d-none d-xl-block d-xxl-none">
-    
-    <nav class="navbar navbar-light navbar-nav-scroll navfont ">
-        <a class="navbar-brand" href="#"><img class="logoclass" src="./img/Spotify_Logo_RGB_White.png"></a>
-      
-        <div class="navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-    
-                <li class="nav-item active">
-                <a class="nav-link text-white-50" href="#">
-                    <img src="./img/home.png" style="width: 20px; margin-right: 5px;">
-                    Home</a>
-                </li>
-    
-                <li class="nav-item">
-                <a class="nav-link text-white-50" href="#">
-                    <img src="./img/search.png" style="width: 20px; margin-right: 5px;">
-                    Search</a>
-                </li>
-    
-                <li class="nav-item">
-                <a class="nav-link text-white-50" href="album.html">
-                    <img src="./img/left-align.png" style="width: 20px; margin-right: 5px;">
-                    Your Library</a>
-                </li>
-            </ul>
-            <ul class="navbar-nav mr-auto mt-2">
-                <li class="nav-item">
-                    <a class="nav-link text-white-50" href="#">
-                    <img src="./img/add.png" style="width: 20px; margin-right: 5px;">
-                    Create Playlist</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link text-white-50" href="artistR.html">
-                    <img src="./img/likedsongs.jpeg" style="width: 20px; margin-right: 5px;">
-                Liked Songs </a>
-                  </li>  
-            </ul>
-            
-            <div class="songslist">
-            <p>Funky Heavy Bluesy</p>
-            <p>Your Top Songs 2020</p>
-            <p>In Love With You - Erykah B</p>
-            <p>This is Rod Stewart</p>
-            <p>FRANCHISE ft. Young Thug</p>
-            <p>Your Top Songs 2019</p>
-            <p>Palleggio</p>
-            <p>This is Joe Bonamassa</p> 
-            <p>Jun19</p>
-            <p>Jack 30th Party2
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-              </svg></p>
-            <p>Jack 30th Party
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
-                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
-              </svg></p>
-            <p>This Is Opeth</p>
-            <p>Metal Ballads</p>
-            <p>New Playlist</p>
-            <p>Your Top Songs 2018</p>
-            <p>Jazz Classics Blue Note Editi</p>
-             
-            </div>
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                <a class="nav-link text-white-50" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V4.5z"/>
-                      </svg>
-                    Install App 
-                </a> 
-                </li>
-            </ul>
-        </div>
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="home.css" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link rel="stylesheet" href="styles.css">
 
-    </nav>
+		<!-- <title>Hello, world!</title> -->
+	</head>
+  
+	<body style=" color: white;">
+         <header>
 
-</div>
+    <div class="sidebar">
+        <img src="https://i.pinimg.com/originals/f0/5c/bc/f05cbc8c0f8b075d2b4f1f68fee49649.jpg" alt="" width="65px;" style="border-radius: 65%;margin-top: 10px;"> <span style="font-size: 1.5rem;margin-top: 10px; margin-right:15px;">spotify</span>
+  <a class="active" href="#home"><i class="fa fa-home" style="font-size: 1.6rem;margin-right: 10px;"></i> Home</a>
+  <a href="#news"><i class="fa fa-search"style="font-size: 1.6rem;margin-right: 10px;"></i>Search</a>
 
-
-<div class="col-10 col-lg-10 col-md-12">
-<section class="myNavBar">
-    <div class="icons">
-        <button class="previous">⮜</button>
-        <button class="previous"> ⮞</button>
-    </div>
-    <div class="account">
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img src="./img/alb11.png" style="border-radius: 50%; width: 30px;">
-                Рая Киселёва
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown-item" href="#">Account</a>
-              <a class="dropdown-item" href="#">Profile</a>
-              <a class="dropdown-item" href="login.html">Log out</a>
-            </div>
-          </div>
-
-    </div>
-
-</section>
-
-
-<section id="good-morning">
-    <div class="heading">
-        <h4>Good morning</h4>
-        <p style="color: gray; padding-right: 10px;"></p>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-              
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/1QhMLK6AI8vjViTuAB6VVx?theme=0" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/1AhDOtG9vPSOmsWgNW0BEY" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-          </div>
-      
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards" id="liked">
-                <img src="./img/likedsongs.jpeg">
-                <span>Liked Songs</span>
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/0i8JFpqe9cKwnrcvoNgl1L" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-          </div>
-      
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/4CbKVDZkYKdv69I4bCaKUq" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/4emQrNiz37OidY7SoXXQls" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            
-          </div>
-      
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/5O9Dz0h08LuBi0aVvDcylh" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/1W0YS64vF9qgMVLuN76aqg" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            
-          </div>
-      
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/3EGlnkJGcwz73rT0oE0X1X?theme=0" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/0o4ybf9KAlbbmYcvdGLfJY" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-          </div>
-          <div class="morning col-lg-2 col-md-3 col-sm-4 col-6 my-5">
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/2Cc4xF0pwkk3G3VE1YofUu" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="album-cards">
-                <iframe src="https://open.spotify.com/embed/track/2UREu1Y8CO4jXkbvqAtP7g" width="250" height="80" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
-
-
-
- <div class="heading">
-    <h4 style="margin-bottom: 25px;">Recently Played</h4>
-    <p style="color: gray; padding-right: 10px;">SEE ALL</p>
-</div>
-
-<div class="container-fluid recently">
-    <div class="row">
-
-    <div id="carouselExampleControls" class="carousel" data-ride="carousel">
-    <div class="carousel-inner">
-
-      <div class="carousel-item active">
-          <div class="container-fluid recently">
-                <div class="row">
-                    <div class="test">
-                        <img src="./img/alb1.png"class="alb-pics">
-                        <p>Random title of album</p>
-                    </div>
-                    <div class="test">
-                        <img src="./img/alb2.png"class="alb-pics">
-
-                        <p>Random title of album</p>
-                    </div>
-                    <div class="test">
-                        <img src="./img/alb3.png"class="alb-pics">
-                        <p>Random title of album</p>
-                    </div>
-                    <div class="test">
-                        <img src="./img/alb4.png"class="alb-pics">
-                        <p>Random title of album</p>
-                    </div>
-                    <div class="test">
-                        <img src="./img/alb5.png"class="alb-pics">
-                        <p>Random title of album</p>
-                    </div>
-                    <div class="test">
-                        <img src="./img/alb6.png"class="alb-pics">
-                        <p>Random title of album</p>
-                    </div>
+  <a href="album.html">Your Library</a>
+  <a href="artist.html">Artist</a>
+  <div>
+      <a href="#"><i class="fa fa-plus-square"style="font-size: 1.3rem;margin-right: 10px;"></i> Create Project</a>
+     <a href="#"><i class="fa fa-gratipay"style="font-size: 1.3rem;margin-right: 14px;color:skyblue"></i>Liked songs</a>
      
-                </div>
-            </div>
-      </div>
-
-      <div class="carousel-item">
-          <div class="container-fluid recently">
-            <div class=" row">
-                <div class="test">
-                    <img src="./img/alb7.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb8.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb9.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb10.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb11.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb12.png">
-                    <p>Random title of album</p>
-                </div>
-            </div>
-        </div>
-      </div>
-
-      <div class="carousel-item">
-            <div class="container-fluid recently">
-            <div class="row ">
-                <div class="test">
-                    <img src="./img/alb13.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb14.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb15.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb16.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb17.png">
-                    <p>Random title of album</p>
-                </div>
-                <div class="test">
-                    <img src="./img/alb18.png">
-                    <p>Random title of album</p>
-                </div>
-            </div>
-            </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
   </div>
+  <div>
+     
+  <li>Funky heavy Bluesy</li>
+  <li>Your Top 2021</li>
+  <li>In love with you</li>
+  <li>Never give up</li>
+  <li>Hymn on the weekend</li>
+  <li>Jun19</li>
+  <li>That is opeth</li>
+  <li>Metal Ballads</li>
+  <li>New playlist</li>
+  <li>Your top songs</li></div>
+  <li>Funky heavy Bluesy</li>
+  <li>Your Top 2019</li>
+  <li>Favorite songs</li>
+  <li>Romantic song</li>
+    <li>Hymn on the weekend</li>
+  <li>Jun19</li>
+  <li>That is opeth</li>
+  <li>Metal Ballads</li>
+  <li><a href="login.html">Sign out</a></li>
+ 
+  <li> <i class="fa fa-download"style="font-size: 1.3rem;margin-right: 14px;color:skyblue"></i>Install App</li>
 
 </div>
+ 
+   </header>
+   <main>
+       <div class="container-fluid">
+       <section class="good-morning">
+<div class="container d-flex justify-content-between">
+    <div class="mt-3"><h4 class="morning">Good Morning</h4>
+</div>
+<div>
+        <input type="text" placeholder="serach here" ; style="background-color: white; border: none;border-radius: 20px;padding: 10px;margin-top: 2rem;"onchange ="getData(this.value)">
+</div>
+           <div class="dropdown my-3">
+  <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="https://i.pinimg.com/736x/ea/69/dc/ea69dc6226e72a33f82d3add20b470df.jpg" alt="" width="20px; height: 30px"><span>Manish....</span>
+   
+
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#recently-played">Recently Played</a>
+    <a class="dropdown-item" href="#allsongs">All </a>
+    <a class="dropdown-item" href="#trending">Trending</a>
+     <a class="dropdown-item" href="#weekly">Weeky Top</a>
+  </div>
 </div>
 
-
-
-<section class="recently-played" style="margin-bottom: 50px;">
-    <div class="heading">
-       <h4 style="margin-bottom: 25px;">Shows to try</h4>
-       <p style="color: gray; padding-right: 10px;">SEE ALL</p>
-   </div>
-   
-   <div class="container-fluid recently">
-       <div class="row">
-   
-       <div id="carouselExampleControls1" class="carousel slide" data-ride="carousel">
-       <div class="carousel-inner">
-   
-         <div class="carousel-item active">
-             <div class="container-fluid recently">
-                   <div class="row">
-                       <div class="test">
-                           <img src="./img/alb16.png"class="alb-pics">
-                           <p>1</p>
-                       </div>
-                       <div class="test">
-                           <img src="./img/alb15.png"class="alb-pics">
-   
-                           <p>2</p>
-                       </div>
-                       <div class="test">
-                           <img src="./img/alb14.png"class="alb-pics">
-                           <p>3</p>
-                       </div>
-                       <div class="test">
-                           <img src="./img/alb13.png"class="alb-pics">
-                           <p>4</p>
-                       </div>
-                       <div class="test">
-                           <img src="./img/alb12.png"class="alb-pics">
-                           <p>5</p>
-                       </div>
-                       <div class="test">
-                           <img src="./img/alb11.png"class="alb-pics">
-                           <p>6</p>
-                       </div>
-                       
-                       
-                       
-                   </div>
-               </div>
+    
+</div>
+<div class="container">
+    <div class="row good-row " style="margin-left: 80px;">
+       
+           <!-- <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3 ">
+            <div class="card card-morning">
+                <img src="https://slm-assets.secondlife.com/assets/20336719/view_large/20180412_113631.jpg?1523964040" alt="temperature song">
+                <div>
+                <p>Sick boy</p>
+                <p>Chainsmokers</p>
+            </div>
+            </div>
+        </div>
+           <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3">
+            <div class="card card-morning">
+                <img src="https://i.ytimg.com/vi/NDonh28AY3I/maxresdefault.jpg" alt="temperature song">
+                <div>
+                <p>stars</p>
+                <p>coldplay</p>
+            </div>
+            </div>
+        </div>
+         <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3 ">
+            <div class="card card-morning">
+                <img src="https://slm-assets.secondlife.com/assets/11332546/lightbox/ellie-goulding-love-me-like-you-do-song.jpg?1427557293" alt="temperature song">
+                <div>
+                <p>Love me like</p>
+                <p>Goulding</p>
+            </div>
+            </div>
+        </div>
+         <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3">
+            <div class="card card-morning">
+                <img src="https://upload.wikimedia.org/wikipedia/en/e/e6/The_Weeknd_-_Blinding_Lights.png" alt="temperature song">
+                <div>
+                <p>Blinding lights</p>
+                <p>The weekend</p>
+            </div>
+            </div>
+        </div>
          </div>
-   
-         <div class="carousel-item">
-             <div class="container-fluid recently">
-               <div class=" row">
-                   <div class="test">
-                       <img src="./img/alb10.png">
-                       <p>7</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb9.png">
-                       <p>8</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb7.png">
-                       <p>9</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb7.png">
-                       <p>10</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb6.png">
-                       <p>11</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb5.png">
-                       <p>12</p>
-                   </div>
-               </div>
-           </div>
-         </div>
-   
-         <div class="carousel-item">
-               <div class="container-fluid recently">
-               <div class="row ">
-                   <div class="test">
-                       <img src="./img/alb4.png">
-                       <p>13</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb3.png">
-                       <p>14</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb2.png">
-                       <p>15</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb1.png">
-                       <p>16</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb20.png">
-                       <p>17</p>
-                   </div>
-                   <div class="test">
-                       <img src="./img/alb19.png">
-                       <p>18</p>
-                   </div>
-               </div>
-               </div>
-         </div>
+         <div class="row mt-3"style="margin-left: 80px;">
+         <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3 ">
+            <div class="card card-morning">
+                <img src="https://i.ytimg.com/vi/RhU9MZ98jxo/mqdefault.jpg" alt="temperature song">
+                <div>
+                <p>paris</p>
+                <p>chain smokers</p>
+            </div>
+            </div>
+        </div>
+           <div class=" col-sm-4 col-lg-3 col-xl-2 mx-xl-3 ">
+            <div class="card card-morning">
+                <img src="https://images-na.ssl-images-amazon.com/images/I/51IOl-ae5UL.jpg" alt="temperature song">
+                <div>
+                <p>clocks</p>
+                <p>Coldplay</p>
+            </div>
+            </div>
+        </div>
+           <div class="col-sm-4 col-lg-3 col-xl-2 mx-xl-3">
+            <div class="card card-morning">
+                <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Closer_%28featuring_Halsey%29_%28Official_Single_Cover%29_by_The_Chainsmokers.png" alt="temperature song">
+                <div>
+                <p>Closer</p>
+                <p>Chainsmokers</p>
+            </div>
+            </div>
+        </div>
+         <div class="col-sm-4 col-lg-3 col-xl-2 mx-xl-3">
+            <div class="card card-morning">
+                <img src="https://slm-assets.secondlife.com/assets/19185904/view_large/sign_of_the_times.jpg?1512793041" alt="temperature song">
+                <div>
+                <p>sign of times</p>
+                <p>Harry styles</p>
+            </div>
+            </div>
+        </div>
+         <div class="col-sm-4 col-lg-3 col-xl-2 mx-xl-3">
+            <div class="card card-morning">
+                <img src="https://s2.dmcdn.net/v/9rgWj1LLSwDaLu7Hw/x1080" alt="temperature song">
+                <div>
+                <p>Gravity</p>
+                <p>Coldplay</p>
+            </div>
+            </div>
+        </div>
+         </div> -->
+</div>
+       </section>
        </div>
-       <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
-         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-         <span class="sr-only">Previous</span>
-       </a>
-       <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
-         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-         <span class="sr-only">Next</span>
-       </a>
-     </div>
-   
-   </div>
-   </div>
-   
-   </section>
-
-
-</div>
-</div>
-</div class="container-fluid"> 
-
-
-
-<section class="footer">
-        <div class="col-12 controls">
-        <div class=" group">
-            <span><img src="./img/alb7.png" style="margin-right: 10px;">Some music title<br></span>
+       <div class="container " style="margin-top: 3rem;">
+        <section
+			class="recently-played mt-4" 
+			 color: white"
             
-            <span class="toMove"> by Group Random <img src="./img/heart.png" class="icons" style="width: 25px; height: 25px; margin-left: 20px;margin-bottom: 10px;"></span>
-            
-        </div>
-    <div class="control-panel">
-            <img src="./img/shuffle.png" class="icons">
-            <img src="./img/previous.png" class="icons">
-            <img src="./img/play-button (1).png" class="icons" style="width:35px;height: 35px;">
-            <img src="./img/next.png" class="icons">
-            <img src="./img/repeat.png" class="icons">
-            
-    </div>
-        
-        <div class="extras">
-            <img src="./img/playlist.png" class="icons">
-            <img src="./img/devices.png" class="icons">
-            <img src="./img/volume.png" class="icons">
-            <input type="range" class="volume-range">
-        </div>
-</section>
-
-
-
-<div class="container-fluid">
-    <div class="heading">
-        <h4 style="margin-bottom: 25px;padding-left: 295px;">New releases</h4>
-        <p style="color: gray; padding-right: 10px;">SEE ALL</p>
-    </div>
-    <div class="container-mine">
-        
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/2UREu1Y8CO4jXkbvqAtP7g?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/1Vej0qeQ3ioKwpI6FUbRv1?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/1Td7TGT1XtK2ojUjz1mGUV?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/5OxclJsdFESni44YlpNpkR?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/1NkHDIbGjHqFjZJrdHjQGZ?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/58q4ZkagWkDV16Sehqx6AF?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    </div>
-    </div>
-    <div class="container-fluid">
-    <div class="heading">
-        <h4 style="margin-bottom: 25px;padding-left: 295px;">Spotify Faves</h4>
-        <p style="color: gray; padding-right: 10px;">SEE ALL</p>
-    </div>
-    <div class="container-mine">
-        
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/6wpHmxmxPa3N3Gi3aGdTJL?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/6UsNqIqCC9WIDdg9Xxxv84?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/48gS3f9HDsXtlMBVdwvC2Z?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/2aIB1CdRRG7YLBu9hNw9nR?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/3cixuToHeVkcYiPSPfUbqX?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    <div class="card-container">
-        <iframe src="https://open.spotify.com/embed/track/2UDumaw7osnyjH7RZ2DLpB?theme=0" width="250" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    </div>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-    <script src="../script.js"></script>
-    <script src="">
-        // document.querySelector("body").style.backgroundColor = "red"
-    </script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		>
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-    
+          <div class="container id="recently-played" >
+					<h3 class="text-align-left">Recently played</h3>
+				    <input type="text" placeholder="Recently played" ; style="background-color: rgba(127, 255, 212, 0.404); border: none;border-radius: 20px;padding: 10px;"onchange ="allSongs(this.value)">
+				</div>
+		 <div class="container">
+					<p style="text-align: right;">SEE All</p>
+			</div>
+            
+			
+		
+			<div class="container-fluid " style="margin-left: 6rem;">
+				<div class="row  all-songs">
+					
+                    <!-- <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px";
+								src="https://m.media-amazon.com/images/I/61CTJwwhXFL._SS500_.jpg"
+								class="card-img-top "
+								alt="memories-img"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">Turn down </h6>
+
+						</div>
+					</div><div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px ;height: 120px;"
+								src="https://images-eu.ssl-images-amazon.com/images/I/51NKF9YUJ-L._SY445_SX342_QL70_ML2_.jpg"
+								class="card-img-top "
+								alt="thunder-song-img"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">Dont let me down</h6>
+
+						</div>
+					</div>
+                    <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin:  auto; height: 120px;"
+								src="https://m.media-amazon.com/images/I/812bZtstsBL._SS500_.jpg"
+								class="card-img-top "
+								alt="perfectsong-img"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">Counting stars</h6>
+
+						</div>
+					</div>
+                    <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px"
+								src="https://i.ytimg.com/vi/fwK7ggA3-bU/maxresdefault.jpg"
+								class="card-img-top "
+								alt="never-say-never"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">One more night</h6>
+
+						</div>
+					</div> -->
+                    <!-- <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px "
+								src="https://i1.sndcdn.com/artworks-000578385494-1tcoaj-t500x500.jpg"
+								class="card-img-top "
+								alt="weekend-song"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1"> Cheap thrills</h6>
+
+						</div>
+					</div> -->
+					 <!-- <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px "
+								src="http://media2.s-nbcnews.com/i/streams/2013/September/130917/4B9032107-8c8869651-130906-katy-perry-roar.jpg"
+								class="card-img-top "
+								alt="weekend-song"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">Roar</h6>
+
+						</div>
+					</div>
+					 <div class=" col-sm-5 col-md-4 col-lg-3 col-xl-1 pt-2 " style="margin-right: 4rem;">
+						<div class="card my-card" style="width: 150px; height: 200px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px" >
+							<img style="width: 120px;border-radius:10px ;margin: auto; height: 120px "
+								src="https://upload.wikimedia.org/wikipedia/en/0/0a/Pitbull_featuring_Marc_Anthony_-_Rain_Over_Me.jpg"
+								class="card-img-top "
+								alt="weekend-song"
+                              
+							/>
+						
+								<h6 class="card-title px-3 pt-1">Rain oevr me</h6>
+
+						</div>
+					</div> -->
+
+                   
+				</div>
+			</div>
+             
+		</section>
+		<section
+			class="shows-to-try mt-4"
+			 color: white"
+             
+		>
     
 
-</body>
+			<!-- <div
+				class="shows-header d-flex align-items-center justify-content-between"
+			>
+				<div class="shows-details" >
+					<h3 class="ml-4">Shows to try</h3>
+					<p class="ml-4">Podcasts we think you"ll get hooked on</p>
+				</div>
+				<div>
+					<p style="margin-left: 5rem;">SEE All</p>
+				</div>
+			</div> -->
+            <div class="container" id ="allsongs" >
+					<h3 class="text-align-left">Shows to try</h3>
+                    <p class="mt-2">Podcasts we think you"ll get hooked on</p>
+				
+				</div>
+		 <div class="container">
+					<p style="text-align: right;">SEE All</p>
+			</div>
+			
+			<div class="container-fluid " style="margin-left: 6rem;">
+				<div class="row row-1">
+				
+                    
+                   
+
+                   
+				</div>
+                <div class="row row-2"></div>
+               
+			</div>
+             
+		</section>
+          </div>
+		<section class="currently-playing" style="background-color: rgba(0, 0, 0, 0.418); color: white;">
+			<div class="container-fluid">
+				<div class="current-song d-flex justify-content-around ">
+					<div class="d-flex align-items-center">
+					<div class="card my-card" style="width: 60px; height: 60px;background-color: rgba(0, 0, 0, 0.5);border-radius:10px; margin-left: 3rem;" >
+							<img style="width: 40px;border-radius:10px ;margin: auto; height: 40px "
+								src="https://static.onecms.io/wp-content/uploads/sites/20/2016/01/beyonce-1024-5.jpg"
+								class="card-img-top "
+								alt="weekend-song"
+                              
+							/>
+					</div>
+					<h6 style="margin-left: 10px; margin-top: 10px;">Hymn for the weekend <span>	<p style="font-size: 12px;">Coldplay</p></span></h6>
+				
+					<p></p>
+					<i class="fa fa-heart " style="margin-left: 10px; color:rgba(255, 255, 255, 0.363);"></i>
+					<i class="fa fa-square"style="margin-left: 10px; color:rgba(255, 255, 255, 0.363);"></i>
+						</div>		
+			  <div class="audio-player">
+				<div class="audio-icons" style="margin-top: 10px; margin-right: 20rem; ">
+					<i class="fa fa-random px-4 hoverMe"></i>
+					<i class="fa fa-step-backward px-4 hoverMe"></i>
+					<i class="fa fa-play-circle px-4 hoverMe" style="font-size: 1.6rem;"></i>
+					<i class="fa fa-step-forward px-4 hoverMe"></i>
+					<i class="bi bi-arrow-repeat" ></i>
+				</div>
+			<progress max="5" value="2" style="width:60%;"> </progress>
+				</div>
+				<div class="mt-4 volume">
+					<i class="bi bi-list-stars px-2 "></i>
+					<i class="bi bi-archive px-2 "></i>
+					<i class="fa fa-volume-down px-2 speaker "></i> 
+				</div>
+				</div>
+			</div>
+		</section>
+      
+        </main>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+        <script src="homepage.js"></script>
+	</body>
 </html>
+
