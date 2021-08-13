@@ -4,7 +4,7 @@ ns<!DOCTYPE html>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>M3D5</title>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -35,7 +35,7 @@ ns<!DOCTYPE html>
         background-size: cover;
           height: 450px;
           background-attachment: fixed;
-          background-image: url(./img/QLive.jpg);
+          background-image: url("https://www.bensound.com/bensound-img/retrosoul.jpg");
           
           /* background-image: url(./img/headphones.jpg); */
           /* background-image: url("../img/BGB.jpg"); */
@@ -379,6 +379,18 @@ margin-bottom: 50px;
     
 
   }
+  #artistBox > div:nth-child(2) > h3 > ul > li:nth-child(1){
+    font-size: 55px;
+  }
+
+
+  p.card-text.title{
+    color:white
+  }
+  p.card-text.title:hover{
+    color:rgb(86, 141, 35),
+    
+  }
 
     </style>
   </head>
@@ -591,8 +603,9 @@ margin-bottom: 50px;
     </div>
 
 </section>
-            <div class="container queen">
-              <h1 class="display-3 d-flex "><b>Queen</b></h1>
+            <div class="container queen" >
+              
+              <h1 class="display-3 d-flex " id='artistName'><b>...</b></h1>
               <p id="listeners" >37,120,733 monthly listeners</p>
             </div>
 
@@ -645,7 +658,7 @@ margin-bottom: 50px;
 <div class="container-fluid mt-3 ml-2">
   <div class="row">
   <div  class="container ml-5 mr-5">
-<h2 class="m-2">Artist  </h2>
+<h2 class="mt-2">Artist  </h2>
     <div id="artistBox" class="row">
   </div>
 </div>
@@ -655,8 +668,8 @@ margin-bottom: 50px;
 
 <div  class="container ml-5 mr-5">
 
-<h2 class="m-2">Artist albums </h2>
-<div id="beatles-row" class="row">
+<h2 class="mt-5">Artist albums </h2>
+<div id="artistBox2" class="row">
 </div>
 
 
@@ -677,92 +690,100 @@ margin-bottom: 50px;
 
 
 
-
-    
-      <div class="container d-flex justify-content-center"> 
-        <div class="img" id="emblem"> <h1 id="demo" onmouseover="mouseOver()" onmouseout="mouseOut()"><b>QUEEN</b></h1>
-      
-
-
-      <img onmouseover="bigImg(this)" onmouseout="normalImg(this)"  src="img/Queen-Emblem.jpg" alt="emblem" width="350" height="auto">
-      </div>
-      
-      </div>
-      
-
-
-
 <script>
-
-function bigImg(x) {
-  x.style.height = "260px";
-  x.style.width = "auto";
-}
-
-function normalImg(x) {
-  x.style.height = "200px";
-  x.style.width = "auto";
-}
-
-function mouseOver() {
-  document.getElementById("demo").style.color = "white";
-}
-
-function mouseOut() {
-  document.getElementById("demo").style.color = "red";
-}
-</script>
-
-
-<script>
-
 window.onload = () => {
-
   showArtist();
+  showList();
+  artistNameJumbo();
 }
-      
+    
+
+
+
+//display Artist object - simple DOM
 function showArtist(album) {
-        const artistDOM = document.getElementById("artistBox");
-       
-        fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412", {
-          
-        })
-          .then((response) => response.json())
-
-          .then((obj) => { 
-            
-            console.log('halllooo', obj.name)
-            console.log('halllooo', obj.picture)
-            
-            artistDOM.innerHTML += 
-
-            `<div class='col col-md-6 col-lg-6'> 
-              <div class="card">
-              <img src="${obj.picture_medium}" class="card-img-top" alt="...">
-              </div>                           
-            </div>
-            <div class='col col-md-6 col-lg-6'> 
-        <h3><ul class="list-group">
+const artistDOM = document.getElementById("artistBox");
+     
+fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412", {
+  })
+  .then((response) => response.json())
+  .then((obj) => { 
+                           
+    artistDOM.innerHTML += 
+    `<div class='col col-md-6 col-lg-6'> 
+      <div class="card">
+      <img src="${obj.picture_medium}" class="card-img-top" alt="...">
+      </div>                           
+    </div>
+    <div class='col col-md-6 col-lg-6'> 
+  <h3><ul class="list-group">
+  <li class="list-group-item"><strong>${obj.name}</strong></li>
   <li class="list-group-item">Number of albums: ${obj.nb_album}</li>
   <li class="list-group-item">Number of fans:  ${obj.nb_fan}</li>
   <li class="list-group-item">Category: ${obj.type} </li>
   <li class="list-group-item"><img src='${obj.picture_small} '> </li>
- </ul></h3>                         
-              
-              
-            </div>`;
-            
-            
+ </ul></h3>               
+                        
+            </div>`;         
                         })
-          .catch((err) => {
-            console.error(err);
-          });
-      }
-    
+  .catch((err) => {
+  console.error(err);
+  });
+      } 
+      
 
 
 
 
+//fetching and displaying from another API new url track-list
+const artistDOM2 = document.getElementById("artistBox2")
+
+function showList(album) {
+fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412/top?limit=50", {})
+.then((response) => response.json())
+.then((obj) => { 
+
+for (let i=0; i < 5 ; i++) {
+    artistDOM2.appendChild(createTrackList(obj, i));       
+            }
+})
+.catch((err) => {
+console.error(err);
+});
+}
+
+//creatting album card
+const createTrackList = (obj, i) => {
+const albumCard = document.createElement("div"); 
+albumCard.classList.add( 
+  "col-md-2",        
+  "col-lg-2",          
+  "p-1", 
+  "m-3"
+  );
+albumCard.innerHTML = `<div class="single-album shadow" id="single-card"> 
+<a href="./album.html" class="link-light"> <img src="${obj.data[i].album.cover_medium}" class="card-img-top d-fluid" >
+    <div class="card-body">
+    <p class="card-text title"> 
+    ${obj.data[i].title} 
+      </p></a>
+      <p class="card-text">             
+      </p>
+      </div>
+      </div>`;
+         return albumCard;
+       };
+
+
+
+let artistNameJumboTag = document.querySelector("artistName")
+
+const artistNameJumbo = function(){
+
+  
+  console.log('ejjj', artistNameJumboTag)
+
+}
 
 
 
