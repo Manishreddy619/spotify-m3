@@ -373,7 +373,7 @@ margin-bottom: 50px;
 
   #artistBox > div:nth-child(2) > h3 > ul > li:nth-child(n){
     background-color:transparent;
-    font-family: Helvetica; Arial;
+    font-family: Helvetica; 
     font-size: 25px; 
     color: #c2c2c2;
     
@@ -391,7 +391,23 @@ margin-bottom: 50px;
     color:rgb(86, 141, 35),
     
   }
+  #artistName > div > h1 > b{
+    color:#000000;
+    font-size: 100px;
+    font-weight: bolder;
+    margin-left: 45px;
+    padding-top: 120px;
 
+
+  }
+
+  #artistName > div > h4{
+    color: rgb(0, 0, 0);
+    margin-left: 45px;
+    font-weight: bolder;
+
+
+  }
     </style>
   </head>
   <body>
@@ -603,50 +619,44 @@ margin-bottom: 50px;
     </div>
 
 </section>
-            <div class="container queen" >
-              
-              <h1 class="display-3 d-flex " id='artistName'><b>...</b></h1>
-              <p id="listeners" >37,120,733 monthly listeners</p>
-            </div>
+<div class="container queen" >
+<div class="col" id='artistName'></div>                           
+</div>
+</div>
 
 
+<div class="strip">
 
+<div class="container d-flex align-items-md-end   ">
+<div class="display-4 d-flex align-items-end">
 
-              </div>
+<div class="mx-3">
+<!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-play-circle-fill text-success" viewBox="0 0 16 16">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
+              </svg>
+            -->
+<img src="img/play-button.png" id="playButton" >
+</div>
+<button type="button" class="btn btn-outline-secondary">FOLLOW</button>
+<div class="mx-2">
 
+</div>
 
-          <div class="strip">
-
-          <div class="container d-flex align-items-md-end   ">
-            <div class="display-4 d-flex align-items-end">
-
-                <div class="mx-3">
-                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" fill="currentColor" class="bi bi-play-circle-fill text-success" viewBox="0 0 16 16">
-                                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"/>
-                                    </svg>
-                                  -->
-                    <img src="img/play-button.png" id="playButton" >
-                  </div>
-                    <button type="button" class="btn btn-outline-secondary">FOLLOW</button>
-                  <div class="mx-2">
-
-                  </div>
-
-                  <div id="3dots" class="mx-2">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="30"
-                      fill="currentColor"
-                      class="bi bi-three-dots"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
-                      />
-                    </svg>
-                  </div>
-                </div>
+<div id="3dots" class="mx-2">
+<svg
+xmlns="http://www.w3.org/2000/svg"
+width="20"
+height="30"
+fill="currentColor"
+class="bi bi-three-dots"
+viewBox="0 0 16 16"
+>
+<path
+  d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+/>
+</svg>
+</div>
+</div>
 
 
           </div>
@@ -671,34 +681,16 @@ margin-bottom: 50px;
 <h2 class="mt-5">Artist albums </h2>
 <div id="artistBox2" class="row">
 </div>
-
-
-
-
-
-
-
-
-
-
 </div>
-
-
-<!----------------------------ABOUT SECTION------------------------------------->
-              
-<!----------------- on tour-->
-
 
 
 <script>
 window.onload = () => {
   showArtist();
   showList();
-  artistNameJumbo();
+  
 }
     
-
-
 
 //display Artist object - simple DOM
 function showArtist(album) {
@@ -722,9 +714,12 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412", {
   <li class="list-group-item">Number of fans:  ${obj.nb_fan}</li>
   <li class="list-group-item">Category: ${obj.type} </li>
   <li class="list-group-item"><img src='${obj.picture_small} '> </li>
- </ul></h3>               
-                        
-            </div>`;         
+ </ul></h3>              
+  </div>`;   
+
+    artistNameJumboTag.innerHTML +=`<div><h1 class="display-3 d-flex color-black" ><b>${obj.name}</b></h1> <h4>${obj.nb_fan} monthly listeners</h4>  </div> 
+   
+  `   
                         })
   .catch((err) => {
   console.error(err);
@@ -737,6 +732,9 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412", {
 
 //fetching and displaying from another API new url track-list
 const artistDOM2 = document.getElementById("artistBox2")
+const  artistNameJumboTag = document.getElementById("artistName")
+
+
 
 function showList(album) {
 fetch("https://striveschool-api.herokuapp.com/api/deezer/artist/412/top?limit=50", {})
@@ -776,26 +774,10 @@ albumCard.innerHTML = `<div class="single-album shadow" id="single-card">
 
 
 
-let artistNameJumboTag = document.querySelector("artistName")
-
-const artistNameJumbo = function(){
-
-  
-  console.log('ejjj', artistNameJumboTag)
-
-}
 
 
 
 </script>
-
-
-
-
-
-
-
-
 
 
 
